@@ -206,6 +206,13 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # HW crypto
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
@@ -481,12 +488,6 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi Display
 #PRODUCT_BOOT_JARS += \
 #    WfdCommon
-
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
-
-PRODUCT_PACKAGES += \
-       libhwbinder \
-       libhwbinder.vendor
 
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v29/arm64/arch-arm64-armv8-a/shared/vndk-core/libprotobuf-cpp-full.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprotobuf-cpp-full.so \
