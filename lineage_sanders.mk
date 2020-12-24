@@ -35,6 +35,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sanders
+SAKURA_MAINTAINER := ArmSM
 PRODUCT_NAME := lineage_sanders
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
@@ -52,6 +53,3 @@ VENDOR_BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085
 
 #OFFICIAL
 SAKURA_OFFICIAL := true
-
-# Lawnchair/OPlauncher
-LAWNCHAIR_OPTOUT=true
